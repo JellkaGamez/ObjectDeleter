@@ -95,7 +95,7 @@ first_s_tag = data.find(b'<s>')
 second_s_tag = data.find(b'<s>', first_s_tag + 1)
 third_s_tag = data.find(b'<s>', second_s_tag + 1)
 header = data[:third_s_tag]
-header.replace(name.decode('utf-8'), f'{name.decode('utf-8')} broken')
+header = header.decode('utf-8').replace(name.decode('utf-8'), f'{name.decode("utf-8")} broken').encode('utf-8')
 
 # get the footer
 footer = remove(data, ['<s>', '<s>', '<s>', '</s>'], 'aaaa')

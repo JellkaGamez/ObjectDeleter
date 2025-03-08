@@ -18,4 +18,4 @@ This program has only been **tested** on 1.9 levels but *should* work on modern 
 
 Happy deleting!
 
-Program version 1.0.1
+Program version 1.0.2

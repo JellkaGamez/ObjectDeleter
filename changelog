@@ -3,3 +3,6 @@ V1.0.0
 
 V1.0.1
 - Patched level name bug
+
+V1.0.2
+- Fixed strings and bytes not being compatable (small oversight)
