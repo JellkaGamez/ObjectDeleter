@@ -14,6 +14,8 @@ This program will **NOT**
 This program supports GD levels following these requirements
 - Follows standard GD encryption
 - Is downloaded from GD V2.2
+This program has some issues that are being worked on!
+- Some level data is broken (could just be my copy of the level)
 This program has only been **tested** on 1.9 levels but *should* work on modern levels
 
 Happy deleting!
