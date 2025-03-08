@@ -101,7 +101,7 @@ header = header.decode('utf-8').replace(name.decode('utf-8'), f'{name.decode("ut
 footer = remove(data, ['<s>', '<s>', '<s>', '</s>'], 'aaaa')
 
 # combine the header, final_lv and footer
-final = header + final_lv + footer
+final = header + b'<s>' + final_lv + b'</s>' + footer
 
 # save to a final file
 with open(f"{name.decode('utf-8')}R.gmd", 'wb') as f:

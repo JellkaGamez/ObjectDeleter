@@ -6,3 +6,9 @@ V1.0.1
 
 V1.0.2
 - Fixed strings and bytes not being compatable (small oversight)
+
+V1.0.3
+- Fixed bugs regarding missing tags (big oversight)
+
+V1.0.4
+- Fixed the unending tag bug
