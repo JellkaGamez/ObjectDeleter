@@ -11,4 +11,7 @@ V1.0.3
 - Fixed bugs regarding missing tags (big oversight)
 
 V1.0.4
-- Fixed the unending tag bug
+- Fixed the unending tag 
+
+V1.0.5
+- Fixed levels in folder being messed up

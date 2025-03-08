@@ -28,7 +28,7 @@ name = remove(gmd, ['<s>', '<s>', '</s>'], 'aab')
 lv_code = remove(gmd, ['<s>', '<s>', '<s>', '</s>'], 'aaab')
 
 # save to a temporary file
-with open(f"temp/p1/{file}.txt", "w") as f:
+with open(f"temp/p1/{name}.txt", "w") as f:
     f.write(lv_code.decode('utf-8'))
 
 # decode the lv code
@@ -36,7 +36,7 @@ lv_code = base64.urlsafe_b64decode(lv_code)
 lv_code = gzip.decompress(lv_code)
 
 # save to a temporary file
-with open(f"temp/p2/{file}.txt", "w") as f:
+with open(f"temp/p2/{name}.txt", "w") as f:
     f.write(lv_code.decode('utf-8'))
 
 # extract the metadata
@@ -46,7 +46,7 @@ metadata = text_before(lv_code, ';')
 object_data = text_after(lv_code, ';')
 
 # save to a temporary file
-with open(f"temp/p3/{file}.txt", "w") as f:
+with open(f"temp/p3/{name}.txt", "w") as f:
     f.write(object_data.decode('utf-8'))
 
 # split at every ;
@@ -57,7 +57,7 @@ object_data = object_data.split(';')
 percentage = float(input("Enter percentage: ")) / 100
 
 # save to a temporary file
-with open(f"temp/p4/{file}.txt", "w") as f:
+with open(f"temp/p4/{name}.txt", "w") as f:
     f.write(f'{object_data}')
 
 # print some information
@@ -72,14 +72,14 @@ for i in range(int(len(object_data) * percentage)):
 object_data = ";".join(object_data)
 
 # save to a temporary file
-with open(f"temp/p5/{file}.txt", "w") as f:
+with open(f"temp/p5/{name}.txt", "w") as f:
     f.write(f'{object_data}')
 
 # add metadata
 final_lv = metadata.decode('utf-8') + object_data
 
 # save to a temporary file
-with open(f"temp/p6/{file}.txt", "w") as f:
+with open(f"temp/p6/{name}.txt", "w") as f:
     f.write(f'{final_lv}')
 
 # encode the lv code

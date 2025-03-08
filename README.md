@@ -24,4 +24,4 @@ This program has only been **tested** on 1.9 levels but *should* work on modern 
 
 Happy deleting!
 
-Program version 1.0.4
+Program version 1.0.5
